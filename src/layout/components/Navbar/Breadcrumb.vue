@@ -32,11 +32,11 @@
     }
 </script>
 
-<style rel="stylesheet/scss" lang="scss" scoped>
+<style rel="stylesheet/css" lang="less" scoped>
     .app-breadcrumb.el-breadcrumb {
         display: inline-block;
         font-size: 14px;
-        line-height: $navBar-height;
+        line-height: @navBar-height;
         .no-redirect {
             color: #97a8be;
             cursor: text;

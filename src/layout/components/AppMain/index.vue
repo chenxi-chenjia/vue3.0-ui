@@ -19,11 +19,11 @@
     }
 </script>
 
-<style rel="stylesheet/scss" lang="scss" scoped>
+<style rel="stylesheet/css" lang="less" scoped>
     .app-main {
-        height: $main-height;
+        height: @main-height;
         position: relative;
         overflow: hidden;
-        background-color: $mainBackgroundColor;
+        background-color: @mainBackgroundColor;
     }
 </style>

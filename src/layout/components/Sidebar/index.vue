@@ -35,7 +35,7 @@
                 return this.$router.options.routes
             },
             isCollapse() {
-                return ! this.sidebar.opened
+                return !this.sidebar.opened
             },
             appTitle() {
                 return process.env.VUE_APP_TITLE
@@ -44,12 +44,13 @@
     }
 </script>
 
-<style lang="scss">
+<style rel="stylesheet" lang="less">
     .logo-item {
-        background-color: $sidebar-logo-background !important;
-        height: $navBar-height;
-        line-height: $navBar-height;
+        background-color: @sidebar-logo-background !important;
+        height: @navBar-height;
+        line-height: @navBar-height;
         font-size: 18px;
+
         &:after {
             content: '';
             position: absolute;
@@ -58,11 +59,13 @@
             bottom: 0;
             border-bottom: solid 1px #e6e6e6;
         }
+
         .svg-icon {
             color: red;
         }
+
         span {
-            color: $sidebar-logo-color !important;
+            color: @sidebar-logo-color !important;
         }
     }
 

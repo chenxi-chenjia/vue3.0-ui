@@ -50,12 +50,12 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
     .navbar-item {
         display: flex;
         justify-content: center;
-        height: $navBar-height;
-        min-width: $navBar-height;
+        height: @navBar-height;
+        min-width: @navBar-height;
     }
 
     .hover{

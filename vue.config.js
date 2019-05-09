@@ -59,15 +59,6 @@ module.exports = {
         // },
     },
 
-    css: {
-        modules: false,
-        loaderOptions: {
-            sass: {
-                data: `@import "@/styles/index.scss";`,
-            },
-        },
-    },
-
     configureWebpack: config => {
         if (process.env.NODE_ENV === 'production') {
             // 为生产环境修改配置...
@@ -83,6 +74,41 @@ module.exports = {
             }
         } else {
             // 为开发环境修改配置...
+        }
+    },
+
+    css: {
+        loaderOptions: {
+            less: {
+                globalVars: {
+                    'menuBg': ' #304156',
+                    'subMenuBg': '#1f2d3d',
+                    'menuHover': '#001528',
+
+                    //主题颜色
+                    /** 登录页面 **/
+                    //  项目名颜色
+                    'loginLogoTitleColor': 'red',
+                    //背景颜色
+                    'loginBackgroundColor': '#283443',
+
+                    //主页面
+                    'mainBackgroundColor': '#f8f8f8',
+
+                    /** layout 相关 **/
+                    'navBar-height': '50px',
+                    'main-height': 'calc(100vh - 50px)',
+                    'sidebar-width': '180px',
+                    'sidebar-item-height': '56px',
+                    'hide-sidebar-width': '36px',
+                    'sidebar-logo-background': '#ffffff',
+                    'sidebar-logo-color': '#333',
+
+                    // 行间隔高度
+                    'white-space': '20px',
+
+                }
+            }
         }
     },
 

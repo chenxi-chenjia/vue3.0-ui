@@ -57,11 +57,11 @@
     }
 </script>
 
-<style rel="stylesheet/scss" lang="scss" scoped>
+<style rel="stylesheet/css" lang="less" scoped>
     nav {
         @include clearfix;
-        height: $navBar-height;
-        line-height: $navBar-height;
+        height: @navBar-height;
+        line-height: @navBar-height;
         border-radius: 0 !important;
         padding-right: 30px;
         position: relative;
@@ -87,7 +87,7 @@
             width: 100%;
             height: 100%;
             font-size: 16px;
-            line-height: $navBar-height;
+            line-height: @navBar-height;
             text-align: center;
         }
     }

@@ -4,14 +4,15 @@
     </div>
 </template>
 
-<style lang="sass">
-    @import "./assets/font/iconfont.css"
+<style lang="less">
+    @import "./assets/font/iconfont.css";
 </style>
 
 <style lang="css">
     .page-container {
         padding: 20px 60px;
     }
+
     .app-container {
         box-sizing: border-box;
         height: 100%;
@@ -34,7 +35,7 @@
         height: 100%;
     }
 
-    .el-dialog__headerbtn{
+    .el-dialog__headerbtn {
         z-index: 999;
     }
 </style>

@@ -45,7 +45,7 @@
     }
 </script>
 
-<style rel="stylesheet/scss" lang="scss" scoped>
+<style rel="stylesheet/css" lang="less" scoped>
     .app-wrapper {
         @include clearfix;
         position: relative;
